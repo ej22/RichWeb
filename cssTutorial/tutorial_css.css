@@ -1,0 +1,58 @@
+div{
+	/*	1 pixel border on all divs	*/
+	border:1px solid;
+	margin: 5px; /* used for space between boxes */
+	padding: 3px; /* used for space between border and content */
+	position:static; 
+}
+
+#div-before{
+	background-color:aqua; /* can be defined through the word, RFB(xx,xx,xx) or Hex code */
+}
+
+#div-1{
+	background-color:black;
+	color:white; /* changes color of content to white */
+	
+	/*
+	position: relative;
+	top:20px;
+	left:-40px;
+	*/
+	
+	position:relative;
+	height:300px;
+}
+
+#div-1a{
+	background-color:red;
+	color:white;
+	
+	float:left;
+	width:200px;
+}
+
+#div-1b{
+	background-color:#00ff40;
+	color:white;
+	/*
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	*/
+	float:left;
+	width:200px;
+}
+
+#div-1c{
+	background-color:blue;
+	color:white;
+	
+	clear:both;
+}
+
+#div-after{
+	background-color:#8181F7;
+	color:white;
+}
