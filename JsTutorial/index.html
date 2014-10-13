@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>JS Tutorial</title>
+<script type="text/javascript">
+	function popup() {
+		alert("hello");
+	}
+
+	function validateForm() {
+		if (document.contactForm.contactName.value.trim() == "") //Trim is a function to get rid of spaces in form on left and right of text. Spaces between words are not trimmed. 
+			alert("Please fill in the 'Your Name' box")
+	}
+</script>
+</head>
+
+<body>
+	<h1>Please enter your details below</h1>
+
+	<form name="contactForm" action="#" method="get"
+		onsubmit="validateForm()">
+		<p>
+			Your name: <input type="text" name="contactName">
+		</p>
+		<p>
+			<input type="submit" name="Send" value="Send Details">
+		</p>
+	</form>
+
+	<!--  
+	<form action="input.html" method="get">
+		<input type="button" value="Click Me!" name="clickmebutton" onclick="popup()"> <br>
+	</form>
+	
+	<a href="#" onmouseout="popup()">Hover me!</a> <-- can also use onmouseover
+	-->
+</body>
+</html>
