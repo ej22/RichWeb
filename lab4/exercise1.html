@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 1</title>
+<script type="text/javascript">
+function validateForm(){
+	var reason="";
+	
+	reason += validateName();
+	reason += validateAge();
+	reason += validateGender();
+	reason += validateCheckBox();
+	
+	if(reason != ""){
+		alert("Something went wrong" + reason);
+		return false;
+		}
+	alert("Validation Successful");
+	return true;
+}
+
+function validateName(){
+	if(document.mainForm.Name.value.trim() = "")
+		{
+		alert("Fill in Name \n");
+		return false;
+		}
+	return true;
+}
+
+function validateAge(){
+	if(document.mainForm.ages.selectedIndex > 0){
+		return true;
+	}
+	return "Pick an Age /n";
+	return false;
+}
+
+function validateGender(){
+	if(document.mainForm.gender.checked){
+		return true;
+	} else
+		return "Select a Gender /n";
+		return false;
+}
+
+function validateCheckBox(){
+	if(!document.mainForm.T&C.checked){
+		return "Agree to Terms and Conditions /n"
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+	<form name="mainForm" method="post" action="#" onsubmit="validateName()">
+		Name: <input type="text" name="Name"><br> <br> Age:
+		<select name="ages">
+			<option>Select One</option>
+			<option>0-18</option>
+			<option>18-30</option>
+			<option>30-45</option>
+			<option>45-60</option>
+			<option>60+</option>
+		</select> <br><br> Male: <input type="radio" name="gender"> Female: <input
+			type="radio" name="gender"> <br><br>
+			Terms and Conditions: <input type="checkbox" name="T&C">
+			<br><br> <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
