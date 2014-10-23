@@ -9,13 +9,6 @@ html {
 	position: relative;
 }
 
-#dashboard{
-	width:100%;
-	max-width:960px;
-	height:100px;
-	background-color:#000000;
-	position:absolute;
-}
 
 #accounts_nav {
 	list-style-type: none;

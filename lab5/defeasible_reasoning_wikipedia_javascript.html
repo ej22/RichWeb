@@ -6,13 +6,33 @@
 <title>Defeasible reasoning - Wikipedia, the free encyclopedia</title>
 <link href="wikipedia_css.css" rel="stylesheet" />
 
+<script type="text/javascript">
+	function hide(){
+		var hide = document.getElementById("defeasible_resoning_section").style.visibility='hidden';
+		var hide2 = document.getElementById("history_section").style.visibility='hidden';
+		var hide3 = document.getElementById("political_and_judical_use_section").style.visibility='hidden';
+		var hide4 = document.getElementById("specificity_section").style.visibility='hidden';
+		var hide5 = document.getElementById("nature_of_defeasibility_section").style.visibility='hidden';
+		var hide6 = document.getElementById("see_also_section").style.visibility='hidden';
+		var hide7 = document.getElementById("references_section").style.visibility='hidden';
+		var hide8 = document.getElementById("external_links_section").style.visibility='hidden';
+	}
+	
+	function emphasis(){
+		
+	}
+	
+	function removeLinks(){
+		var x = document.getElementsByTagName('a');
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.display = 'none';
+		}
+	}
+</script>
+
 </head>
 
 <body id="body">
-
-		<div id="dashboard">
-       
-       </div>
 
 	<div id="sidebar">
 		<figure id="logo">
@@ -78,6 +98,9 @@
 			<ul>
 				<li class="selected"><span>Article </span></li>
 				<li class="grad"><span> Talk</span></li>
+				<li class="hide"><span><a href="#" onclick="hide();">Hide</a></span></li>
+				<li class="emphasis"><span><a href="#" onclick="emphasis();">Emphasis</a></span></li>
+				<li class="remove"><span><a href="#" onclick="removeLinks();">Remove</a></span></li>
 			</ul>
 		</div>
        
